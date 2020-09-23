@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MAD_Mini_Project</string>
+    <string name="My_Acount_page">My Accounts</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="page_add_account">Add Account</string>
+    <string name="add_account_text_msg">Just add your account details now !.You can edit them later.</string>
+    <string name="add_account_name">Enter a Unique Account Name You like</string>
+    <string name="add_account_balance">Enter initial account balance</string>
+    <string name="account_save_btn">SAVE</string>
+    <string name="current_acc_balance">Enter the current balance</string>
+    <string name="page_update_account">Edit Account</string>
+    <string name="page_transfer_money">Transfer Money</string>
+    <string name="transfer_amnt">Enter the amount</string>
+    <string name="tot_acc_balance">10000.00</string>
+    <string name="tot_tag_for_account">Tot :</string>
+    <string name="acc_back_button">Back</string>
+    <string name="codetalk_welcome">CodeTalk</string>
+</resources>

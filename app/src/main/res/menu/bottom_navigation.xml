@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/Account"
+        android:icon="@drawable/ic_account"
+        android:title="Account"/>
+    <item
+        android:id="@+id/Transaction"
+        android:state_selected ="false"
+        android:icon="@drawable/ic_transaction"
+        android:title="Transaction"/>
+    <item
+        android:id="@+id/Envelope"
+        android:state_selected ="false"
+        android:icon="@drawable/ic_envelope"
+        android:title="Envelopes"/>
+    <item
+        android:id="@+id/BillTracker"
+        android:state_selected ="false"
+        android:icon="@drawable/ic_billtracker"
+        android:title="Bill Tracker"/>
+
+   </group>
+</menu>
