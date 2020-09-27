@@ -37,7 +37,7 @@ public class MyAccount extends AppCompatActivity {
     TextView totText;
     ArrayList<Account> accountList;
     String accKey;
-    Double total = 0.0;
+    //Double total = 0.0;
 
 
     @Override
@@ -55,9 +55,8 @@ public class MyAccount extends AppCompatActivity {
         DatabaseReference ref= FirebaseDatabase.getInstance().getReference().child("Account");
 
 
-
-
         ref.addValueEventListener(new ValueEventListener() {
+            Double total = 0.00;
 
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -67,7 +66,9 @@ public class MyAccount extends AppCompatActivity {
                     String key = dsp.getKey();
 
                     account = dsp.getValue(Account.class);
-                    total = total + account.getBalance();
+
+                    total = calcTotal(total, account.getBalance());
+
                     account.setKey(key);
 
                     accountList.add(account);
@@ -80,6 +81,7 @@ public class MyAccount extends AppCompatActivity {
                 AccountAdapter adapter = new AccountAdapter(MyAccount.this,accountList);
                 listView.setAdapter(adapter);
                 totText.setText(String.valueOf(total));
+
 
 
             }
@@ -206,6 +208,11 @@ public class MyAccount extends AppCompatActivity {
 
 
     }
+    public double calcTotal(Double tot, Double balance){
+        tot = tot + balance;
+        return tot;
+    }
+
 
 
 

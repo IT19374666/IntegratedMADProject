@@ -119,17 +119,11 @@ public class UpdateAccount extends AppCompatActivity implements AdapterView.OnIt
 
                     } else{
                         //Assigning input values to the account object variables
-                        //account.setAccName( textAccName.getText().toString());
+
 
                         dbRef.child("accType").setValue(textAccType);
                         dbRef.child("balance").setValue( Double.parseDouble(editAccountBalance.getText().toString()));
-                        //dbRef.child("accName").setValue(extraAccName);
-                        //account.setAccType(textAccType);
-                        //account.setBalance( Double.parseDouble(editAccountBalance.getText().toString()));
-                       // account.setAccName(extraAccName);
                         System.out.println(account);
-                        //Insert to the db
-                        //dbRef.setValue(account);
 
                         //Feedback
                         Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT);
