@@ -24,7 +24,7 @@
         android:layout_width="55dp"
         android:layout_height="33dp"
         android:text="@string/tot_tag_for_account"
-        android:textColor="#CA1515"
+        android:textColor="#070707"
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,12 +58,25 @@
         android:clickable="true"
         android:focusable="true"
         android:foregroundGravity="right"
-        app:backgroundTint="#F44336"
+        app:backgroundTint="#2653F6"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_add"
         tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/text_tot_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:text="@string/_0_00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/accTot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,6 +16,7 @@
     <string name="acc_back_button">Back</string>
     <string name="codetalk_welcome">CodeTalk</string>
 
+
     <string name="Setup_Budget">Setup Budget</string>
     <string name="Add_Envelope_Page">Add Envelope</string>
     <string name="Edit_Envelope">Edit Budget</string>
@@ -33,5 +34,8 @@
     <string name="displayEnvelopeName">Name</string>
     <string name="displayAmount">Amount</string>
 
+
+
+    <string name="_0_00">0.00</string>
 
 </resources>
