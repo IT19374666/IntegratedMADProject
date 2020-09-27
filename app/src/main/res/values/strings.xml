@@ -15,5 +15,27 @@
     <string name="tot_tag_for_account">Tot :</string>
     <string name="acc_back_button">Back</string>
     <string name="codetalk_welcome">CodeTalk</string>
+
+
+    <string name="Setup_Budget">Setup Budget</string>
+    <string name="Add_Envelope_Page">Add Envelope</string>
+    <string name="Edit_Envelope">Edit Budget</string>
+    <string name="txtName">Name</string>
+    <string name="txtAmount">Amount</string>
+    <string name="BtnAdd">ADD</string>
+    <string name="BtnCancel">CANCEL</string>
+    <string name="addNewEnvelopeTopic">Add New Envelope</string>
+    <string name="envelope_name">Envelope Name :</string>
+    <string name="budget_amount">Budget Amount :</string>
+    <string name="edit_envelope_topic">Edit Envelope</string>
+    <string name="deleteBtn">Delete</string>
+    <string name="updateBtn">Update</string>
+    <string name="addAmountText">Amount</string>
+    <string name="displayEnvelopeName">Name</string>
+    <string name="displayAmount">Amount</string>
+
+
+
     <string name="_0_00">0.00</string>
+
 </resources>
