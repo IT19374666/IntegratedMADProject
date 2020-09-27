@@ -12,22 +12,25 @@
 
         <activity
             android:name=".MainActivity"
-
             android:theme="@style/AppTheme.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
+        <activity
+            android:name=".UpdateEnvelope"
+            android:label="@string/Edit_Envelope" />
+        <activity
+            android:name=".MyEnvelope"
+            android:label="@string/Setup_Budget" />
+        <activity
+            android:name=".AddEnvelope"
+            android:label="@string/Add_Envelope_Page" />
         <activity
             android:name=".MyAccount"
-            android:label="@string/My_Acount_page"/>
-
+            android:label="@string/My_Acount_page" />
     </application>
-
-
 
 </manifest>
