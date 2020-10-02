@@ -9,26 +9,37 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity
-            android:name=".MainActivity"
-
-            android:theme="@style/AppTheme.NoActionBar">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
-
         <activity
             android:name=".MyAccount"
             android:label="@string/My_Acount_page"/>
+        <activity
+            android:name=".UpdateAccount"
+            android:label="@string/page_update_account" />
+        <activity
+            android:name=".AddAccount"
+            android:label="@string/page_add_account" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateEnvelope"
+            android:label="@string/Edit_Envelope" />
+        <activity
+            android:name=".MyEnvelope"
+            android:label="@string/Setup_Budget" />
+        <activity
+            android:name=".AddEnvelope"
+            android:label="@string/Add_Envelope_Page" />
+        
         <activity
             android:name=".BillSchedule"
             android:label="My_Bills"/>
@@ -40,6 +51,10 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
+
+            android:label="@string/My_Acount_page" />
+    
+
 
         </receiver>
         <receiver android:name=".ReminderBroadcast"></receiver>

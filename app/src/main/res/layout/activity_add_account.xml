@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
+    android:textAlignment="center"
+    tools:context=".AddAccount">
+
+    <EditText
+        android:id="@+id/accountName"
+        android:layout_width="319dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/add_account_name"
+        android:inputType="textPersonName"
+        android:shadowColor="#FFFFFF"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorHighlight="#131313"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textCursorDrawable="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <EditText
+        android:id="@+id/editAccountBalance"
+        android:layout_width="269dp"
+        android:layout_height="42dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/add_account_balance"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorHighlight="?android:attr/colorForeground"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:textColorLink="@color/design_default_color_on_secondary"
+        android:textCursorDrawable="@color/design_default_color_on_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <TextView
+        android:id="@+id/AddacountDetailsWelcomeMsg"
+        android:layout_width="388dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_account_text_msg"
+        android:textColor="#100F0F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveAccountBtn"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:background="#0040FF"
+        android:ellipsize="middle"
+        android:text="@string/account_save_btn"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <Spinner
+        android:id="@+id/accTypeSpinner"
+        android:layout_width="331dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
