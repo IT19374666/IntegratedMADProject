@@ -163,7 +163,11 @@ public class MyAccount extends AppCompatActivity {
 
                         return true;
                     case R.id.BillTracker:
-                        startActivity(new Intent(getApplicationContext(), AddAccount.class));
+
+                        startActivity(new Intent(getApplicationContext(), BillSchedule.class));
+
+                      
+
                         return true;
                     case R.id.Transaction:
                         startActivity(new Intent(getApplicationContext(), AddAccount.class));
