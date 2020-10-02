@@ -56,7 +56,7 @@ public class MyAccount extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), MyAccount.class));
                         return true;
                     case R.id.BillTracker:
-                        startActivity(new Intent(getApplicationContext(), MyAccount.class));
+                        startActivity(new Intent(getApplicationContext(), BillSchedule.class));
                         return true;
                     case R.id.Transaction:
                         startActivity(new Intent(getApplicationContext(), MyAccount.class));
