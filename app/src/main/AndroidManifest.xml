@@ -36,10 +36,9 @@
             android:name=".AddEnvelope"
             android:label="@string/Add_Envelope_Page" />
 
+
+
     </application>
-
-
-
 
 
 
