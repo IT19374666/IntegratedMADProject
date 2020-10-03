@@ -35,13 +35,11 @@
         <activity
             android:name=".AddEnvelope"
             android:label="@string/Add_Envelope_Page" />
-        <activity
-            android:name=".MyAccount"
-            android:label="@string/My_Acount_page" />
+
     </application>
 
 
-    </application>
+
 
 
 

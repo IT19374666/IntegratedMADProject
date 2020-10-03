@@ -13,6 +13,7 @@
         android:id="@+id/Welcome_screen_app-name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/codetalk_welcome"
         android:textColorLink="#DD1212"

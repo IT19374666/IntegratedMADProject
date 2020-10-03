@@ -17,7 +17,7 @@
         android:focusable="true"
 
         android:foregroundGravity="right"
-        app:backgroundTint="#F44336"
+        app:backgroundTint="#2A48EF"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.924"
