@@ -2,12 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mad_mini_project">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MyAccount"
             android:label="@string/My_Acount_page"/>
@@ -17,6 +22,7 @@
         <activity
             android:name=".AddAccount"
             android:label="@string/page_add_account" />
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -26,7 +32,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EditTransactions"
+            android:label="Edit Transactions"></activity>
+        <activity android:name=".My_Transactions"
+            android:label="My Transactions"></activity>
+        <activity android:name=".AddTransactions"
+            android:label="Transactions"></activity>
         <activity
+
             android:name=".UpdateEnvelope"
             android:label="@string/Edit_Envelope" />
         <activity
@@ -36,10 +49,25 @@
             android:name=".AddEnvelope"
             android:label="@string/Add_Envelope_Page" />
 
+        <activity
+            android:name=".BillSchedule"
+            android:label="My_Bills"/>
 
+        <receiver
+            android:name=".BootUp"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+
+
+
+        </receiver>
+        <receiver android:name=".ReminderBroadcast"></receiver>
 
     </application>
 
-
-
 </manifest>
+

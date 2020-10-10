@@ -16,6 +16,26 @@
     <string name="acc_back_button">Back</string>
     <string name="codetalk_welcome">CodeTalk</string>
 
+    <string name="transaction_prompt">Choose a type</string>
+
+    <string-array name="transaction_arrays">
+        <item>Income</item>
+        <item>Expence</item>
+
+    </string-array>
+
+    <string name="t_category_prompt">Choose a category</string>
+    <string-array name="t_category_arrays">
+        <item>Electric</item>
+        <item>Water</item>
+        <item>Rental</item>
+        <item>Salary</item>
+        <item>Fee</item>
+
+    </string-array>
+
+
+
 
     <string name="Setup_Budget">Setup Budget</string>
     <string name="Add_Envelope_Page">Add Envelope</string>
@@ -39,3 +59,4 @@
     <string name="_0_00">0.00</string>
 
 </resources>
+
